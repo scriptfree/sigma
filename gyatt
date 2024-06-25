@@ -1,6 +1,6 @@
 local scripts = {
-    ["Script 1"] = "https://raw.githubusercontent.com/dogefriendyt/Doge-Hub/main/scripts/My%20Restaurant";
-    ["Script 2"] = "https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua";
+    ["MVSD"] = "https://raw.githubusercontent.com/scriptfree/sigma/main/kai-cenat";
+    ["ZR"] = "https://raw.githubusercontent.com/scriptfree/lua/main/private/zombie-rush";
 }
 local bindableFunction = Instance.new("BindableFunction")
 
@@ -12,10 +12,10 @@ end
 
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Notification";
-    Text = "Choose an autofarm method.";
-    Button1 = "Script 1";
-    Button2 = "Script 2";
+    Title = "HEY!";
+    Text = "Choose a script";
+    Button1 = "MVSD";
+    Button2 = "ZR";
     Duration = 60000;
     Callback = bindableFunction;
 })
