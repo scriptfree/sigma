@@ -1,0 +1,21 @@
+local scripts = {
+    ["Script 1"] = "https://raw.githubusercontent.com/dogefriendyt/Doge-Hub/main/scripts/My%20Restaurant";
+    ["Script 2"] = "https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua";
+}
+local bindableFunction = Instance.new("BindableFunction")
+
+function bindableFunction.OnInvoke(choice)
+    if scripts[choice] then
+        loadstring(game:HttpGet(scripts[choice]))()
+    end
+end
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "Choose an autofarm method.";
+    Button1 = "Script 1";
+    Button2 = "Script 2";
+    Duration = 60000;
+    Callback = bindableFunction;
+})
