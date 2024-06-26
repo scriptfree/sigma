@@ -1,6 +1,6 @@
 local scripts = {
-    ["MVSD"] = "https://raw.githubusercontent.com/scriptfree/sigma/main/kai-cenat";
-    ["ZR"] = "https://raw.githubusercontent.com/scriptfree/lua/main/private/zombie-rush";
+    ["dick"] = "raw dick user content pls";
+    ["pussy"] = "raw github user content pls";
 }
 local bindableFunction = Instance.new("BindableFunction")
 
@@ -13,9 +13,9 @@ end
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "HEY!";
-    Text = "Choose a script";
-    Button1 = "MVSD";
-    Button2 = "ZR";
+    Text = "Choose your favorite";
+    Button1 = "dick";
+    Button2 = "pussy";
     Duration = 60000;
     Callback = bindableFunction;
 })
